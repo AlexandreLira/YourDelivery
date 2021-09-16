@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Configuraçao</title>
+    <link rel="stylesheet" href="index.css"/>
+    <link rel="stylesheet" href="style-config.css"/>
+    <link rel="icon" href="img/icon.png">
+</head>
+<body>
+    <div class="container">
+        <header class="header">
+            <div>
+                <div id="fotoPerfil"></div>
+                <p id="nomeDaEmpresa"></p>
+            </div>
+
+            <div>
+                <img src="img/logo.png" >
+            </div>
+           
+       </header>
+       <aside>
+        <ul>
+             <a href="payment.html"><li><img src="img/icon-pay.png" style="width: 50px;"></li></a>
+             <a href="charts.html"><li><img src="img/icon-chart.png" style="width: 50px;"></li></a>
+             <a href="config.html"><li><img src="img/icon-config-active.png" style="width: 50px;"></li></a>
+         </ul>
+     </aside>
+       <main>
+            <div class="container">
+                <div id="div-cadastro">
+                    <div id="div-motoqueiros">
+                        <h4>Cadastrar Motoqueiro(a)</h4>
+                        <div id="box-cadastro">
+                            <p>Nome:</p>
+                            <input type="text" id="input-nomeMotoqueiro">
+                            <button id="cadastrarMotoqueiro">Cadastrar</button>
+                        </div>
+                        <ul id="listaMotoqueiros">
+                            <li id="Motoqueiro">
+                                
+                            </li>
+                        </ul>
+
+                    </div>
+                    
+                   
+                
+                    <div id="div-entregas">
+                        <h4>Cadastrar Entrega</h4>
+                        <div id="box-cadastro">
+                            <p>Nome da entrega:</p>
+                            <input type="text" id="nome">
+                            <p>Valor Recebido:</p>
+                            <input style="width: 100px;" type="number" id="valorDaEntrega"  min="0">
+                            <p>Valor Repassado:</p>
+                            <input style="width: 100px;" type="number" id="pagoAoMotoqueiro" min="0" >
+                            <button style="width: 100px;" id="cadastrarEntrega">Cadastrar</button>
+                        </div>
+
+                        <ul id="listaDeEntregas">
+                            <li id="entrega">
+                                <p>Valor: 10.00</p>
+                                <p>Repassado: 8.40</p>
+                                <button>Editar</button>
+                            </li>
+                        </ul>
+                    </div>
+
+
+                </div>
+                
+                
+                
+            </div>
+       </main>
+    </div>
+</body>
+<!-- The core Firebase JS SDK is always required and must be listed first -->
+<script src="https://www.gstatic.com/firebasejs/7.9.3/firebase-app.js"></script>
+
+<!-- TODO: Add SDKs for Firebase products that you want to use
+     https://firebase.google.com/docs/web/setup#available-libraries -->
+<script src="https://www.gstatic.com/firebasejs/7.9.3/firebase-analytics.js"></script>
+
+<script src="https://www.gstatic.com/firebasejs/7.9.3/firebase-database.js"></script>
+<script src="firebaseConnect.js"></script>
+
+<script src="./config.js"></script>
+<script src="indexback.js"></script>
+</html>

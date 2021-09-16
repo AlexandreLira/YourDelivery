@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pagamento</title>
+    <link rel="stylesheet" href="index.css"/>
+    <link rel="stylesheet" href="style-pay.css"/>
+    <link rel="icon" href="img/icon.png">
+</head>
+<body>
+    <div class="container">
+        <header class="header">
+            <div>
+                <div id="fotoPerfil"></div>
+                <p id="nomeDaEmpresa"></p>
+            </div> 
+
+            <div>
+                <img src="img/logo.png" >
+            </div>
+           
+       </header>
+       <aside>
+        <ul>
+             <a href="#"><li><img src="img/icon-pay-active.png" style="width: 50px;"></li></a>
+             <a href="charts.html"><li><img src="img/icon-chart.png" style="width: 50px;"></li></a>
+             <a href="config.html"><li><img src="img/icon-config.png" style="width: 50px;"></li></a>
+         </ul>
+     </aside>
+       <main>
+        <div class="box">
+            <div id="div-input-values">
+            
+            </div>
+
+            <div id="div-input-name">
+                <p>Nome do motoqueiro(a):</p>
+                <input type="text" id="input-name" placeholder="Motoqueiro(a)" list="motoqueiros">
+                <datalist id="motoqueiros">
+                    <option value="fafa"></option>
+                </datalist>
+            </div>
+
+            <div id="div-allvalue">
+                <div id="div-value-separation">
+                    <p>Total de entregas:</p><p class="totalEntregas">0</p>
+                </div>
+                <br>
+                <div id="div-value-separation">
+                    <p>Total a pagar:</p><p id="value" class="valorTotal">R$0.00</p>
+                </div>
+                
+            </div>
+
+            <div id="div-buttons">
+                <button id="button-extra">Extra</button>
+                <button id="button-calcular">Calcular</button>
+            </div>
+
+            
+        </div>
+        
+        <!-- ============================ NOTA ================================== -->
+        <div id='section-to-print'>
+            <Span>
+            ==============================
+            <div style="display: flex; justify-content: center;">
+                <p style="font-weight: bold;">Your</p><p style="font-style: italic;">Delivery</p>
+            </div>
+            ==============================
+            Motoqueiro(a):<span id='valorNota' class="name"></span><br>
+            ----------------------------------------------------<br>
+            <div style="display: flex;">
+                <p style="width: 116.6px">Entrega</p>
+                <div style="display: flex; justify-content: center; width: 116.6px;">
+                    <p>Quantidade</p>
+                </div>
+                <div style="display: flex; justify-content: flex-end; width: 116.6px;">
+                    <p>Valor</p>
+                </div>
+            </div>
+            <!-- ----------------------------------------------------<br> -->
+            <ul id="listaEntregas" >
+                
+            </ul>
+            
+            <ul id="listaExtras" >
+                
+            </ul>
+            ==============================<br>
+            <div style="display: flex; font-weight: bold;">
+                <p style="width: 116.6px">Total</p>
+                <div style="display: flex; justify-content: center; width: 116.6px;">
+                    <p id="entregasTotalNota"></p>
+                </div>
+                <div style="display: flex; justify-content: flex-end; width: 116.6px;">
+                    <p id="valorTotalNota"></p>
+                </div>
+            </div>
+            ==============================<br>
+
+
+            <!-- Total entregas:   <span id="valorNota" class="entregas"></span><br>
+            Valor a pagar:    <span id="valorNota" class="total"></span><br> -->
+            <!-- ----------------------------------------------------<br> -->
+            <div style="display: flex; justify-content: space-between;">
+                <div style="display: flex; justify-content: space-between; width: 160px;">
+                    <p>Data:</p><p>10/10/2010</p>
+                </div>
+                <div style="display: flex; justify-content: space-between; width: 160px;">
+                    <p>Hora:</p><p>22:53</p>
+                </div>
+            </div>
+            <!-- Data: <span id='valorNota' class="data"></span><br>
+            Hora: <span id='valorNota' class="hora"></span><br> -->
+            
+            <br>
+            <br>
+            <p id="version">version: 4.0.0</p>
+            
+            </Span>
+        </div>
+    
+       </main>
+     
+       
+</body>
+<!-- The core Firebase JS SDK is always required and must be listed first -->
+<script src="https://www.gstatic.com/firebasejs/7.9.3/firebase-app.js"></script>
+
+<!-- TODO: Add SDKs for Firebase products that you want to use
+     https://firebase.google.com/docs/web/setup#available-libraries -->
+<script src="https://www.gstatic.com/firebasejs/7.9.3/firebase-analytics.js"></script>
+<script src="https://www.gstatic.com/firebasejs/7.9.3/firebase-auth.js"></script>
+<script src="https://www.gstatic.com/firebasejs/7.9.3/firebase-database.js"></script>
+<script src="firebaseConnect.js"></script>
+<script src="script.js"></script>
+<script src="indexback.js"></script>
+</html>

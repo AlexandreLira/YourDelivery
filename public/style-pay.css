@@ -1,0 +1,228 @@
+main {
+    display: flex; 
+    align-items: flex-start;
+    overflow: auto;    
+    background-color: rgb(238, 236, 236);
+}
+
+
+
+
+/* -------------- Box ------------------ */
+.box {
+    display: grid;
+    grid-template-rows: repeat(20, 1fr);
+    width: 500px; 
+    height: 500px; 
+    margin: 50px 0px;
+    background-color: white; 
+    border-radius: 20px;
+    box-shadow: 0px 0px 0px 15px rgba(255,255,255,.2);
+}
+
+.box #div-input-values {
+    display: flex; 
+    grid-row: 2/8; 
+    overflow-x: auto;
+    overflow-y: hidden;
+    justify-content: space-evenly;
+    align-items: center;
+    font-size: 11pt;
+}
+
+
+
+.box #div-input-values div {
+    display: flex; 
+    flex-direction: column;
+    align-items: center;
+}
+
+/* -------------- input-value ------------------ */
+.box .input-value {
+    width: 60px; 
+    height: 60px; 
+    margin: 10px;
+    font-size: 20pt;
+    font-weight: bold;
+    text-align: center;
+    border: 1px solid #810bf0;
+    border-radius: 20px;
+    transition: .25s;
+}
+
+.box > div .input-value:hover {
+    width: 80px;
+    height: 80px;
+    border-color: #28FF92;
+    border-radius: 40px;
+    margin: 0;
+}
+
+.box #div-value-separation{
+    display: flex;
+    flex-direction: row;
+    width: 200px;
+    justify-content: space-between;
+    font-size: 13pt;
+}
+
+.box .value {
+ color: #08C931;
+ font-size: 12pt;
+}
+
+.box  p {
+    font-weight: bold;
+    text-align: center;
+}
+
+
+.box ::-webkit-scrollbar-thumb:horizontal {
+    -webkit-border-radius: 10px;
+    border-radius: 10px;
+    background: #2e9dd8;
+    background: -moz-linear-gradient(left, #28FF92, #1CF1FF);
+    background: -webkit-linear-gradient(left, #28FF92, #1CF1FF);
+    background: linear-gradient(to right, #28FF92, #1CF1FF);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#333333', endColorstr='#333333',GradientType=0 );
+}
+.box ::-webkit-scrollbar {
+    height: 10px;
+    
+    }
+
+
+
+/* -------------- input-name------------------ */
+
+.box #div-input-name {
+    display: flex;
+    grid-row: 9/12;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.box #div-input-name #input-name {
+    width: 200px;
+    height: 35px;
+    padding: 5px;
+    text-align: center;
+    font-size: 12pt;
+    font-weight: bold;
+    border-radius: 30px;
+    border: 1px solid #810bf0;   
+}
+
+.box #div-input-name #input-name:focus {
+    width: 250px;
+    border-color: #28FF92;
+    border-radius: 10px 10px 30px 30px;
+    transition: .25s;
+}
+/* -------------- div-allvlaue------------------ */
+
+.box #div-allvalue {
+    display: flex;
+    grid-row: 13/16;
+    flex-direction: column;
+    align-items: center;  
+}
+.box #div-allvalue .valorTotal {
+    color: #08C931;
+}
+
+/* -------------- div-buttons ------------------ */
+.box #div-buttons {
+    display: flex;
+    grid-row: 17/19;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.box #div-buttons button {
+    width: 90px;
+    height: 40px;
+    font-size: 10pt; 
+    font-weight: bold;
+    border: none;
+    border-radius: 10px ;
+    cursor: pointer;
+    outline: none;
+    transition:.25s;
+}
+
+.box #div-buttons #button-calcular {
+    background: #7823FD;
+    color: #ffffff;    
+}
+
+.box #div-buttons #button-extra {
+    background-color: white;
+    color: #1CF1FF;
+    border: 1px solid #28FF92;
+}
+
+.box #div-buttons #button-calcular:hover, .box #div-buttons #button-extra:hover {
+    width: 120px;
+    background-color: #28FF92;
+    border-color: #28FF92;
+    border-radius: 20px;
+    color: #FFFFFF;
+}
+
+
+
+
+
+/* ================================================ */
+div#section-to-print {
+    position: absolute;
+    left: 0;
+    top: 0;
+    font-family: sans-serif;
+    display: block;
+    Font-size:20px;
+    visibility: hidden;
+    margin: auto;
+    color: #000000;
+    padding: 10px;
+    width: 350px;
+}
+
+#section-to-print ul {
+    list-style: none; 
+    padding: 0px; 
+    margin: 0;
+}
+
+#section-to-print span#titulo {
+    display: block;
+    text-align: center;  
+}
+#section-to-print .name {
+    text-transform: capitalize;
+}
+#section-to-print span#valorNota{
+    display: block;
+    float: right;
+}
+#vesion {
+    font-size: 18px;
+}
+@media print {
+    body * {
+        visibility: hidden;
+    }
+    #section-to-print, #section-to-print * {
+        visibility: visible;
+        color: #000000
+        
+    }
+    #section-to-print {
+        position: absolute;
+        left: 0;
+        top: 0;
+    }
+}

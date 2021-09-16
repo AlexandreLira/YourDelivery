@@ -1,0 +1,176 @@
+html, body, input, p, button {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+    outline: none;
+}
+body {
+    
+    background-image: linear-gradient(-90deg, #1CF1FF, #5321BF);
+    
+}
+.container {
+    display: flex;
+    width: 100vmax;
+    height: 100vmin;
+    justify-content: center;
+    align-items: center;
+}
+div .box{
+    display: flex;
+    width: 800px;
+    height: 500px;
+    border-radius: 20px;
+    box-shadow: 0px 0px 0px 15px rgba(255,255,255,.2);
+    
+    background-color: white;
+}
+.box #left-side {
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 300px;
+    height: 500px;
+    border-radius:0px 20px 20px 0px;
+    background-image: linear-gradient(-180deg, #1AE8BB ,#1CF1FF );
+}
+.box #right-side {
+    display: flex;
+    justify-content: center;
+    width: 500px;
+    height: 500px;
+}
+
+
+
+
+#form {
+    display: flex;
+    
+    flex-direction: column;
+    width: 250px;
+    padding: 10px;
+    margin: auto;
+}
+#form p {
+    margin-top: 10px;
+    margin-bottom: 5px;
+    
+    background-color: white;
+    width: 50px;
+    padding: 2px;
+    text-align: center;
+    
+}
+#form input {
+    
+    height: 40px;
+    background-color: none;
+    border: 1px solid #5321BF;
+    font-size: 13pt;
+    padding: 0px 10px;
+    transition: .25s;
+    
+}
+
+#form input:focus {
+    border-radius: 20px;
+    border-color: #1AE846;
+}
+
+#form button {
+    
+    height: 40px;
+    margin-top: 20px;
+    background-image: linear-gradient(-90deg, #1CF1FF, #1AE8BB  );
+    border: none;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+    transition: .25s;
+    
+    
+}
+
+#form button:hover {
+    
+    background-color: #1AE8Bb;
+    border-radius: 20px;
+}
+
+#criar {
+    width: 100px; 
+    height: 30px; 
+    margin-top: 20px;
+    background: none;
+    font-weight: bold;
+    color: white;
+    border-radius: 15px; 
+    border: 2px solid white;
+    cursor: pointer;
+    transition: .25s;
+}
+
+#criar:hover{
+    width: 120px;
+}
+
+
+/* =============================================== */
+
+
+
+
+ /* ======================================================== */
+
+ .lds-facebook {
+    display: flex;
+    visibility: hidden;
+    position: absolute;
+    top: 0px;
+    justify-content: center;
+    align-items: center;
+    width: 100vmax;
+    height: 100vmin;
+    background-color: rgba(0,0,0,.6);
+    
+  }
+  .lds-facebook div {
+    
+    
+    margin: 5px;
+    width: 16px;
+    animation: lds-facebook 1.2s cubic-bezier(0, 0.5, 0.5, 1) infinite;
+  }
+  .lds-facebook div:nth-child(1) {
+    left: 8px;
+    background: #1CF1FF;
+    animation-delay: -0.24s;
+
+  }
+
+  .lds-facebook div:nth-child(2) {
+    left: 32px;
+    background: #1AE8BB;
+    animation-delay: -0.12s;
+  }
+  .lds-facebook div:nth-child(3) {
+    left: 56px;
+    background: #28FF92;
+    animation-delay: 0;
+  }
+  @keyframes lds-facebook {
+    0% {
+      top: 8px;
+      height: 64px;
+      background-color:  #5321BF;
+    }
+    50%, 100% {
+      top: 24px;
+      height: 32px;
+    }
+  }
+
+

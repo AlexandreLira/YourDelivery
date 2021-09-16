@@ -1,0 +1,47 @@
+main {
+    justify-content: center;
+    align-items: unset;
+    overflow: scroll;
+    overflow-x: hidden;    
+}
+
+.box {
+    width: 900px; 
+}
+
+.box #div-rectangle {
+    display: flex;
+    justify-content: space-between;
+}
+
+.box #rectangle {
+    width: 150px;
+    height: 40px;
+    margin-top: 25px;
+    padding: 10px;
+    border-radius: 10px;
+    background-color: white;
+    box-shadow: 1px 1px 3px rgb(0, 0, 0,.1);
+    
+}
+
+
+.box #rectangle-charts {
+    width: 440px;
+    height: 250px;
+    margin-top: 20px;
+    border-radius: 10px;
+    background-color: white;
+    box-shadow: 1px 1px 3px rgb(0, 0, 0,.1);
+}
+
+.box #rectangle-charts-bar {
+    width: 900px;
+    height: 250px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    border-radius: 10px;
+    background-color: white;
+    
+    box-shadow: 1px 1px 3px rgb(0, 0, 0,.1);
+}

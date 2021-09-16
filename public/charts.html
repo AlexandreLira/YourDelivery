@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Financeiro</title>
+    <link rel="stylesheet" href="index.css"/>
+    <link rel="stylesheet" href="style-chats.css"/>
+    <link rel="icon" href="img/icon.png">
+</head>
+<body>
+    <div class="container">
+        <header class="header">
+            <div>
+                <div id="fotoPerfil"></div>
+                <p id="nomeDaEmpresa"></p>
+            </div>
+
+            <div>
+                <img src="img/logo.png" >
+            </div>
+           
+       </header>
+       <aside>
+        <ul>
+            <a href="payment.html"><li><img src="img/icon-pay.png" style="width: 50px;"></li></a>
+            <a href="charts.html"><li><img src="img/icon-chart-active.png" style="width: 50px;"></li></a>
+            <a href="config.html"><li><img src="img/icon-config.png" style="width: 50px;"></li></a>
+         </ul>
+     </aside>
+       <main>
+            <div class="box">
+                <div id="div-rectangle">
+                    <div id="rectangle">
+                        <div style="height: 20px;">
+                            <p style="font-weight: bold;">Receita:</p>
+                        </div>
+
+                        <div style="height: 20px;">
+                            <p id="receita" style="font-weight: bold; color: #1AE846;">R$0.00</p>
+                        </div>
+                    </div>
+
+                    <div id="rectangle">
+                        <div style="height: 20px;">
+                            <p style="font-weight: bold;">Despesa:</p>
+                        </div>
+
+                        <div style="height: 20px;">
+                            <p id="despesa" style="font-weight: bold; color: #FF050C;">R$0.00</p>
+                        </div>
+                        
+                        
+                    </div>
+                    <div id="rectangle">
+
+                        <div style="height: 20px;">
+                            <p style="font-weight: bold;">Lucro:</p>
+                        </div>
+
+                        <div style="height: 20px;">
+                            <p id="lucro" style="font-weight: bold; color: #1CF1FF;">R$0.00</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div id="div-rectangle">
+                    <div id="rectangle-charts">
+                        <canvas id="myChart" width="420" height="230"></canvas>
+                    </div>
+
+
+                    <div id="rectangle-charts">
+                        <canvas id="myChart2" width="420" height="230"></canvas>
+                    </div>
+                </div>
+
+                <div id="div-rectangle">
+                    <div id="rectangle-charts-bar"><canvas id="myChart3" width="880" height="230"></canvas></div>
+                </div>
+            </div>
+       </main>
+    </div>
+</body>
+<script src="https://www.gstatic.com/firebasejs/7.9.3/firebase-app.js"></script>
+<script src="https://www.gstatic.com/firebasejs/7.9.3/firebase-analytics.js"></script>
+<script src="https://www.gstatic.com/firebasejs/7.9.3/firebase-auth.js"></script>
+<script src="https://www.gstatic.com/firebasejs/7.9.3/firebase-database.js"></script>
+<script src="firebaseConnect.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/chart.js@2.9.3/dist/Chart.min.js"></script>
+<script src="indexback.js"></script>
+<script src="charts.js"></script>
+</html>

@@ -1,0 +1,118 @@
+html, body, input, p {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+    outline: none;
+}
+body {
+    background-color: #e9e9e9;
+}
+.container {
+    display: grid;
+    grid-template-columns: 100px 1fr;
+    grid-template-rows: 68px 91.3vh ;
+    
+    
+}
+
+
+.header {
+    position: absolute; 
+    display: flex;
+    width: 100vw;
+    height: 70px;
+    justify-content: space-between;
+    box-shadow: 1px 1px 10px 1px rgba(46, 46, 46, 0.1);
+    background-color: rgb(255, 255, 255);
+
+}
+
+.header #fotoPerfil {
+    display: flex;
+    width: 50px;
+    height: 50px;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-size: 20pt;
+    font-weight: bold;
+    text-transform: uppercase;
+    margin: 0px 20px 0px 20px;
+    border-radius: 35px;
+    background-color: aqua;
+}
+.header #nomeDaEmpresa {
+    text-transform: capitalize;
+}
+.header > div {
+    display: flex;
+    align-items: center;
+}
+
+.header p {
+    font: 18pt;
+    font-weight: bold;
+}
+
+.header img {
+    display: block;
+    width: 130px;
+    margin-right: 20px;
+}
+
+/* ==============  MAIN ============== */
+
+main {
+    display: flex; 
+    grid-column: 2/3;
+    grid-row: 2/3;
+    justify-content: center; 
+    align-items: center;
+    overflow: hidden;    
+    background-color: rgb(226, 226, 226);
+}
+
+/* ==============  ASIDE ============== */
+aside {
+    display: flex;
+    justify-content: center;
+    grid-column: 1/2;
+    grid-row: 2/3;
+    background-color: rgb(255, 255, 255);
+}
+aside ul {
+    
+    list-style: none;
+    margin: 10px 0px 0px 0px;
+    padding: 0;
+
+}
+aside li {
+    display: flex;
+    margin: 10px;
+    width: 70px;
+    height: 70px;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+    box-shadow: 1px 1px 3px 1px rgb(230, 230, 230);
+}
+
+
+::-webkit-scrollbar-thumb {
+    -webkit-border-radius: 10px;
+    border-radius: 10px;
+    background: #2e9dd8;
+    background: -moz-linear-gradient(-140deg, #28FF92, #1CF1FF);
+    background: -webkit-linear-gradient(-140deg, rgb(40, 255, 146), #1CF1FF);
+    background: linear-gradient(-140deg, #28FF92, #1CF1FF);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#333333', endColorstr='#333333',GradientType=0 );
+}
+
+::-webkit-scrollbar {
+    width: 10px;
+    height:10px;
+    -webkit-border-radius: 10px;
+    background-color: rgba(0, 0, 0,.03);
+    }

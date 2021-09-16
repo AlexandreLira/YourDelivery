@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="stylesheet" href="style-login.css">
+    <link rel="icon" href="img/icon.png">
+</head>
+<body>
+    <div class="container">
+
+        <div class="box">
+            <div id="right-side">
+                
+                <div id="form">
+                    <h1>Login</h1>
+                    
+                    
+                    <p>Email:</p>
+                    <input id="input-email" type="email">
+
+                    <p>Senha:</p>
+                    <input id="input-password" type="password">
+                    <button id="entrar">Entrar</button>
+                </div>
+                
+            </div>
+            <div id="left-side">
+                <h1 style="color: white; margin-top: 50px; margin-bottom: 0px;">YourDelivery</h1>
+                <div style="width: 50px; height: 3px; background-color: white; margin: 10px;"></div>
+                <p style="width:250px; text-align: center; ">
+                    Gerencie seu derivery com inteligencia usado o que há de melhor em tecnologia.
+                </p>
+            </br>
+            </br>
+            </br>
+            </br>
+                <p>Ainda não tem uma conta?</p>
+                <p>Crie sua conta gratis!</p>
+                <a href="./sign-up.html">
+                    <button id="criar" >criar</button>
+                </a>
+            </div>
+        </div>
+
+    </div>
+    <div class="lds-facebook"><div></div><div></div><div></div></div>
+</body>
+<script src="https://www.gstatic.com/firebasejs/7.9.3/firebase-app.js"></script>
+
+<!-- TODO: Add SDKs for Firebase products that you want to use
+     https://firebase.google.com/docs/web/setup#available-libraries -->
+<script src="https://www.gstatic.com/firebasejs/7.9.3/firebase-analytics.js"></script>
+
+<script src="https://www.gstatic.com/firebasejs/7.9.3/firebase-database.js"></script>
+<script src="https://www.gstatic.com/firebasejs/7.9.3/firebase-auth.js"></script>
+<script src="firebaseConnect.js"></script>
+<script src="login.js"></script>
+
+</html>

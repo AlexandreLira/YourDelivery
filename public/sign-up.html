@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>cadastro</title>
+    <style>
+        html, body, input, p, button {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial,  sans-serif;
+            outline: none;
+            
+        }
+        body {
+            
+            background-image: linear-gradient(-90deg, #1CF1FF, #5321BF);
+            
+        }
+        .container {
+            display: flex;
+            width: 100vmax;
+            height: 100vmin;
+            justify-content: center;
+            align-items: center;
+        }
+        .box {
+            display: flex;
+            justify-content: center;
+            width: 300px;
+            height: 450px;
+            background-color: white;
+            border-radius: 20px;
+            box-shadow: 0px 0px 0px 15px rgba(255,255,255,.2);
+        }
+        .box div {
+            width: 250px;
+        }
+        .form {
+            display: flex;
+            flex-direction: column;
+        }
+        input {
+            height: 30px;
+            border: 1px solid #262626;
+            padding: 0px 5px;
+        }
+        
+        p {
+            
+            margin: 10px 0px 0px 0px;
+            
+        }
+
+        
+        button {
+            
+            height: 30px;
+            margin-top: 20px;
+            background-image: linear-gradient(-90deg, #1CF1FF, #1AE8BB  );
+            border: none;
+            color: white;
+            font-weight: bold;
+            cursor: pointer;
+            transition: .25s;
+            
+            
+        }
+
+        button:hover {
+            
+            background-color: #1AE8Bb;
+            border-radius: 20px;
+        }
+        .lds-facebook {
+            display: flex;
+            visibility: hidden;
+            position: absolute;
+            top: 0px;
+            justify-content: center;
+            align-items: center;
+            width: 100vmax;
+            height: 100vmin;
+            background-color: rgba(0,0,0,.6);
+            
+        }
+        .lds-facebook div {
+            
+            
+            margin: 5px;
+            width: 16px;
+            animation: lds-facebook 1.2s cubic-bezier(0, 0.5, 0.5, 1) infinite;
+        }
+        .lds-facebook div:nth-child(1) {
+            left: 8px;
+            background: #1CF1FF;
+            animation-delay: -0.24s;
+
+        }
+
+        .lds-facebook div:nth-child(2) {
+            left: 32px;
+            background: #1AE8BB;
+            animation-delay: -0.12s;
+        }
+        .lds-facebook div:nth-child(3) {
+            left: 56px;
+            background: #28FF92;
+            animation-delay: 0;
+        }
+        @keyframes lds-facebook {
+            0% {
+            top: 8px;
+            height: 64px;
+            background-color:  #5321BF;
+            }
+            50%, 100% {
+            top: 24px;
+            height: 32px;
+            }
+        }
+    </style>
+    <link rel="icon" href="img/icon.png">
+</head>
+<body>
+    <div class="container">
+        <div class="box">
+            <div >
+                <h1>Cadastro</h1>
+                <div class="form">
+                    <p>Nome da empresa:</p>
+                    <input id="nome" type="text">
+                    <p>Email:</p>
+                    <input id="email" type="email">
+                    <p>Senha:</p>
+                    <input id="senha" type="password">
+                    <p>Confime sua senha:</p>
+                    <input id="senha2" type="password">
+                    <button id="confirmar">Confimar</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="lds-facebook"><div></div><div></div><div></div></div>
+</body>
+
+<script src="https://www.gstatic.com/firebasejs/7.9.3/firebase-app.js"></script>
+<script src="https://www.gstatic.com/firebasejs/7.9.3/firebase-analytics.js"></script>
+<script src="https://www.gstatic.com/firebasejs/7.9.3/firebase-database.js"></script>
+<script src="https://www.gstatic.com/firebasejs/7.9.3/firebase-auth.js"></script>
+<script src="firebaseConnect.js"></script>
+<script src="./sign-up.js"></script>
+
+</html>
