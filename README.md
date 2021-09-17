@@ -11,7 +11,7 @@
 ## Demonstração 🚀
 [SITE](https://yourdelivery-app.web.app/)
 
-###Usuario Teste:
+### Usuário para teste:
 email: 
 ```
 teste@gmail.com
