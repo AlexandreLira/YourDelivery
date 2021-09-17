@@ -11,6 +11,15 @@
 ## Demonstração 🚀
 [SITE](https://yourdelivery-app.web.app/)
 
+###Usuario Teste:
+email: 
+```
+teste@gmail.com
+```
+senha:
+```
+123456789
+```
 ## Instalação 💻
 
 Para obter uma cópia local do repositório, execute os seguintes comandos em seu terminal:
