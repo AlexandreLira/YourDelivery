@@ -1,5 +1,7 @@
 # YourDelivery
 
+Site para calcular entrega de motoqueiro
+
 ## Descrição
  Criei esse projeto quando tava trabalhando como caixa em um delivery e vi como era difícil pagar os motoqueiros pois tudo tinha que ser feito manualmente na calculadora, 
  então criei um site para facilitar isso. 
